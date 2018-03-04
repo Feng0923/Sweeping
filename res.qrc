@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>item2.bmp</file>
+        <file>mine.rc</file>
+        <file>mine.ico</file>
+        <file>crying.png</file>
+        <file>smiling.png</file>
+    </qresource>
+</RCC>

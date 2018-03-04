@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>扫雷</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/new/prefix1/mine.ico</normaloff>:/new/prefix1/mine.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menurestart">
+    <property name="title">
+     <string>game</string>
+    </property>
+    <widget class="QMenu" name="menurestart_2">
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>diffcult</string>
+     </property>
+     <addaction name="level1"/>
+     <addaction name="level2"/>
+     <addaction name="level3"/>
+    </widget>
+    <addaction name="actionrestart"/>
+    <addaction name="menurestart_2"/>
+   </widget>
+   <addaction name="menurestart"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="level1">
+   <property name="text">
+    <string>level1(15*10)</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+  </action>
+  <action name="level2">
+   <property name="text">
+    <string>level2(20*15)</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+  </action>
+  <action name="level3">
+   <property name="text">
+    <string>level3(60*40)</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionrestart">
+   <property name="text">
+    <string>restart</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
